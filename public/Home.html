@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html>
+
+  <header>
+    <h3>Welcome to Andrew's Search Engine!</h3>
+  </header>
+
+  <body>
+    <pre><div id="mainDiv">
+      <a>Enter search string: </a>
+      <input type="text" id="qBox"></input>
+
+      <a>Turn on boost (PageRank) for search results? (check for yes)</a> <input type="checkbox" id="boostBox"></input>
+
+      <a>Please enter the number of results you would returned (min 1, default 10, max 50):
+      </a><input type="text" id="resultsBox" style="width: 50px"></input>
+
+      <a>Please selelect the network you would like data from:</a>
+      <select id="networkChoice">
+        <option value="personal">Canada</option>
+      </select>
+
+
+
+      <button type="button" id="btnSearch" onclick="search()" style="height: 50px; width: 125px">Search</button>
+
+    </div>
+    <div id="displayDiv"></div>
+  </pre>
+
+    <!--loading the js file-->
+    <script src="Home.js"></script>
+
+  </body>
+</hmtl>

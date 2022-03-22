@@ -1,0 +1,28 @@
+html
+  head
+    a="Title: "+result.page
+
+  body
+    br
+    br
+    a="url: "
+    a(href=result.url)=result.url
+    br
+    br
+    a="Incoming Links: "
+    br
+    each l in result.incomingLinks
+      a(href=l)=l
+      br
+    br
+    a="Outgoing Links: "
+    br
+    each l in result.outgoingLinks
+      a(href=l)=l
+      br
+    br
+    a="Word frequencies: "
+    br
+    each word in result.wordCounts
+      a=word
+      br

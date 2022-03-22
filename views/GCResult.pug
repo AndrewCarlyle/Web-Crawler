@@ -1,0 +1,20 @@
+html
+  head
+    a="Results for: " + search
+
+  body
+    br
+    br
+    each result in results
+      a="Page title: "+result.page
+      br
+      a="Elasticlunr score: "+result.score
+      br
+      a(href=result.url)=result.url
+      br
+      a="PageRank: "+result.pagerank
+      br
+      a="View all data "
+      a(href="/personal/" + result.id)="here."
+      br
+      br
